@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uddannelse</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="body__skoleprojekter">
+
+    <header>
+        <a href="forside.html" class="logo"><img src="Logo.png" width="150"></a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="om-mai.html">Om Mai</a></li>
+                <li><a href="uddannelse.html">Uddannelse</a></li>
+                <li><a href="krea.html">Kreativitet</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="dokumentation.html">Dokumentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container__skoleprojekter">
+        <div class="text-skoleprojekter">
+            <h1>Uddannelse</h1>
+            <p>Her finder I de forskellige flows, vi har haft indtil videre på første semester.<br><br>
+                Dette eksamensprojekt hører til flow 5, og I finder information om dette flow ved at trykke <a href="dokumentation.html">HER</a>.<br><br>
+
+                Jeg besidder mange kompetencer, men at se ud i fremtiden er desværre ikke en af dem. Derfor bliver de fremtidige semestre først tilføjet på et senere tidspunkt.</p>
+        </div>
+        
+        <div class="flows">
+            <div class="flow-1">
+                <a href="flow-1.html">
+                    <h3>Flow 1</h3>
+                </a>
+            </div>
+            <div class="flow-2">
+                <a href="flow-2.html">
+                    <h3>Flow 2</h3>
+                </a>
+            </div>
+            <div class="flow-3">
+                <a href="flow-3.html">
+                    <h3>Flow 3</h3>
+                </a>
+            </div>
+            <div class="flow-4">
+                <a href="flow-4.html">
+                    <h3>Flow 4</h3>
+                </a>
+            </div>
+    </div>
+    </div>
+
+    <section class="modal container">
+        <button class="modal__button-1" id="open-modal">
+            Find Mai
+        </button>
+
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <span>&times;</span>
+                </div>
+                
+                <h1 class="modal__title">DU FANDT MIG!</h1>
+                <br>
+                <img src="trophy.png" alt="" class="modal__img">
+
+               
+                <p class="modal__description">Godt gået!</p>
+                <p class="modal__description">Find mig også på sociale medier</p>
+
+                <a href="kontakt.html" class="modal__button-2 modal__button-width">KLIK HER</a>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /*=============== SHOW MODAL ===============*/
+        const showModal = (openButton, modalContent) =>{
+            const openBtn = document.getElementById(openButton),
+            modalContainer = document.getElementById(modalContent)
+            
+            if(openBtn && modalContainer){
+                openBtn.addEventListener('click', ()=>{
+                    modalContainer.classList.add('show-modal')
+                })
+            }
+        }
+        showModal('open-modal','modal-container')
+
+        /*=============== CLOSE MODAL ===============*/
+        const closeBtn = document.querySelectorAll('.close-modal')
+
+        function closeModal(){
+            const modalContainer = document.getElementById('modal-container')
+            modalContainer.classList.remove('show-modal')
+        }
+        closeBtn.forEach(c => c.addEventListener('click', closeModal))
+    </script>
+
+</body>
+</html>

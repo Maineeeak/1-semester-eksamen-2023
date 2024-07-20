@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Mai</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="body__om-mai">
+
+    <header>
+        <a href="forside.html" class="logo"><img src="Logo.png" width="150"></a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="om-mai.html">Om Mai</a></li>
+                <li><a href="uddannelse.html">Uddannelse</a></li>
+                <li><a href="krea.html">Kreativitet</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="dokumentation.html">Dokumentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container__om-mai">
+
+        <!-- Side 1 -->
+        <section class="one__om-mai">
+            <div class="content-one__om-mai">
+                <div class="text__om-mai_1">
+                    <h1>Om Mai</h1>
+                    <p>Mit navn er Mai Anna Mørtz Christiansen.<br>
+                        MAMC er mine initialer, men også en forkortelse for “my art, my creativity”.<br><br>
+                        
+                        Jeg er 21 år gammel og læser til multimediedesigner på Cphbusiness Lyngby.<br><br>
+                        
+                        For at fortælle kort om mig selv, er jeg en dedikeret og kreativ person med flair for dårlige jokes.<br><br>
+                        
+                        Jeg sætter et unikt præg på mine projekter i form af en velbalanceret mængde af perfektionisme og personlighed.
+                    </p>
+                </div>
+              <div class="image__om-mai"><img src="img_om-mig/Mai.jpg"></div>
+            </div>
+        </section>
+
+        <!-- Side 2 -->
+        <section class="two__om-mai">
+            <div class="content-two__om-mai">
+                <div class="video__om-mig">
+                    <video src="img_om-mig/video_om-mig.mp4" type="video/mp4" controls></video>
+                </div>
+                <div class="text__om-mai_2">
+                    <h1 id="videosekvens">Video</h1>
+                    <p>Man siger, at et billede siger mere end tusind ord, så derfor har jeg lavet en video, der beskriver Mai som person.<br><br>
+                    Under videoen finder du manuskriptet for den.
+
+                    </p>
+                </div>
+              </div>
+        </section>
+
+        <!-- Side 3 -->
+        <section class="three__om-mai">
+            <div class="content-three__om-mai">
+                <div class="text__om-mai_3_overskrift">
+                    <h1>Manuskript til videosekvens</h1>
+                </div>
+
+                <div class="text__om-mai_3-1">
+                    <h2>01</h2>
+                    <p>Hej, mit navn er Mai.<br>
+                        Jeg er 21 år gammel, født den 19. februar 2002.<br>
+                        Hvilket vil sige, at jeg er fisk, men ikke sådan en her fisk.<br><br>
+
+                        Jeg elsker at være kreativ.<br>
+                        Nogle af de ting jeg laver er:<br>
+                        <ul>
+                            <li>At male.</li>
+                            <li>Sy tøj.</li>
+                            <li>Synge, optræde og spille musik.</li>
+                        </ul><br>
+                        
+                        Jeg har lige siden, jeg var helt lille været på jagt med min far.<br>
+                        Nu er jeg selv jæger og går på jagt.
+                    </p>
+                </div>
+
+                <div class="text__om-mai_3-2">
+                    <h2>02</h2>
+                    <p>Som 15-årig ønskede jeg mig mit eget dyrekranie til pynt på min væg.<br>
+                        Og fordi min far er jæger, sagde han, at det var et projekt, vi selv skulle stå for.<br>
+                        Så vi begyndte på projekt “Kalorius”.<br>
+                        Og siden da har jeg faktisk fået indviet kraniet som en tatovering.<br><br>
+
+                        Derudover elsker jeg at:<br>
+                        <ul>
+                            <li>At være sammen med min familie.</li>
+                            <li>Træne.</li>
+                            <li>Ses med vennerne.</li>
+                            <li>Lave mad (selvom jeg nok er verdens mest langsomme kok).</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="text__om-mai_3-3">
+                    <h2>03</h2>
+                    <p>Jeg elsker i hvert fald at prøve nye ting.<br>
+                        Som f.eks. at klippe mit eget hår eller synge foran en fyldt pub i Irland på studietur.<br><br>
+                        
+                        Overordnet set prøver jeg i hvert fald bare at nyde, hvad jeg har og bruge tid med dem, jeg elsker.<br><br>
+                        
+                        Jeg er i hvert fald bare mig.<br>
+                        Bare Mai.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="modal container">
+        <button class="modal__button-1" id="open-modal">
+            Find Mai
+        </button>
+
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <span>&times;</span>
+                </div>
+                
+                <h1 class="modal__title">DU FANDT MIG!</h1>
+                <br>
+                <img src="trophy.png" alt="" class="modal__img">
+
+               
+                <p class="modal__description">Godt gået!</p>
+                <p class="modal__description">Find mig også på sociale medier</p>
+
+                <a href="kontakt.html" class="modal__button-2 modal__button-width">KLIK HER</a>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /*=============== SHOW MODAL ===============*/
+        const showModal = (openButton, modalContent) =>{
+            const openBtn = document.getElementById(openButton),
+            modalContainer = document.getElementById(modalContent)
+            
+            if(openBtn && modalContainer){
+                openBtn.addEventListener('click', ()=>{
+                    modalContainer.classList.add('show-modal')
+                })
+            }
+        }
+        showModal('open-modal','modal-container')
+
+        /*=============== CLOSE MODAL ===============*/
+        const closeBtn = document.querySelectorAll('.close-modal')
+
+        function closeModal(){
+            const modalContainer = document.getElementById('modal-container')
+            modalContainer.classList.remove('show-modal')
+        }
+        closeBtn.forEach(c => c.addEventListener('click', closeModal))
+    </script>
+
+    <!-- <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal (){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i =0; 1 < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script> -->
+
+</body>
+</html>

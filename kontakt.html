@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body class="body__kontakt">
+
+    <header>
+        <a href="forside.html" class="logo"><img src="Logo.png" width="150"></a>
+    
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="om-mai.html">Om Mai</a></li>
+                <li><a href="uddannelse.html">Uddannelse</a></li>
+                <li><a href="krea.html">Kreativitet</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="dokumentation.html">Dokumentation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container__kontakt">
+        <div class="kontakt-text">
+            <h1>Kontakt</h1>
+            <p>Vil du fortsætte rejsen på det kreative eventyr?<br><br>
+                Fang mig på sociale medier for yderligere kreativitet, innovation, dårlig humor og samarbejdsmuligheder.<br><br>
+                Lad os mødes på Instagram, Twitch og YouTube.
+            </p>
+
+            <div class="knapper__kontakt">
+                <a href="https://www.instagram.com/mamc_art/" class="instagram" target="blank"><img src="img_kontakt/instagram.jpg" width="100" height="100"></a>
+                <a href="https://www.twitch.tv/maineeak" class="twitch" target="blank"><img src="img_kontakt/twitch.jpg" width="100" height="100"></a>
+                <a href="https://www.youtube.com/@Maineeak" class="youtube" target="blank"><img src="img_kontakt/youtube.jpg" width="100" height="100"></a>
+            </div>
+        </div>
+        
+        <div class="polaroid__kontakt">
+            <video autoplay loop muted playsinline src="Polaroid-video.mp4" type="video/mp4"></video>
+            <div class="polaroid__kontakt-text">
+                <p>Find mig på sociale medier!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="modal container">
+        <button class="modal__button-1" id="open-modal">
+            Find Mai
+        </button>
+
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <span>&times;</span>
+                </div>
+                
+                <h1 class="modal__title">DU FANDT MIG!</h1>
+                <br>
+                <img src="trophy.png" alt="" class="modal__img">
+
+               
+                <p class="modal__description">Godt gået!</p>
+                <p class="modal__description">Find mig også på sociale medier</p>
+
+                <a href="kontakt.html" class="modal__button-2 modal__button-width">KLIK HER</a>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /*=============== SHOW MODAL ===============*/
+        const showModal = (openButton, modalContent) =>{
+            const openBtn = document.getElementById(openButton),
+            modalContainer = document.getElementById(modalContent)
+            
+            if(openBtn && modalContainer){
+                openBtn.addEventListener('click', ()=>{
+                    modalContainer.classList.add('show-modal')
+                })
+            }
+        }
+        showModal('open-modal','modal-container')
+
+        /*=============== CLOSE MODAL ===============*/
+        const closeBtn = document.querySelectorAll('.close-modal')
+
+        function closeModal(){
+            const modalContainer = document.getElementById('modal-container')
+            modalContainer.classList.remove('show-modal')
+        }
+        closeBtn.forEach(c => c.addEventListener('click', closeModal))
+    </script>
+
+    
+
+</body>
+</html>

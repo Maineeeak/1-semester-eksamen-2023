@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreativitet</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body__private-projekter>
+
+  <header>
+    <a href="forside.html" class="logo"><img src="Logo.png" width="150"></a>
+
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="om-mai.html">Om Mai</a></li>
+            <li><a href="uddannelse.html">Uddannelse</a></li>
+            <li><a href="krea.html">Kreativitet</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="dokumentation.html">Dokumentation</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="galleri-container">
+
+         <div class="image-container">
+
+            <div class="image"><img src="img_private-projekter/marvel-1.jpg"></div>
+            <div class="image"><img src="img_private-projekter/marvel-2.jpg"></div>
+            <div class="image"><img src="img_private-projekter/marvel-4.jpg"></div>
+            <div class="image"><img src="img_private-projekter/rick-and-morty-1.jpg"></div>
+            <div class="image"><img src="img_private-projekter/rick-and-morty-2.jpg"></div>
+            <div class="image"><img src="img_private-projekter/rick-and-morty-4.jpg"></div>
+            <div class="image"><img src="img_private-projekter/courage-the-cowardly-dog-2.jpg"></div>
+            <div class="image"><img src="img_private-projekter/courage-the-cowardly-dog-1.jpg"></div>
+            <div class="image"><img src="img_private-projekter/courage-the-cowardly-dog-3.jpg"></div>
+         
+            <div class="image"><img src="img_private-projekter/meme-jeans.jpg"></div>
+            <div class="image"><img src="img_private-projekter/kronhjort-1.jpg"></div>
+            <div class="image"><img src="img_private-projekter/vamps.jpg"></div>
+
+            <div class="image"><img src="img_private-projekter/syet-sommertsaet.jpg"></div>
+            <div class="image"><img src="img_private-projekter/andreas.jpg"></div> 
+            <div class="image"><img src="img_private-projekter/top.jpg"></div>
+            <div class="image"><img src="img_private-projekter/syet-saet.jpg"></div>
+            <div class="image"><img src="img_private-projekter/sommertop.jpg"></div>
+            <div class="image"><img src="img_private-projekter/josefines-studenterkjole.jpg"></div>
+            <div class="image"><img src="img_private-projekter/nederdel.jpg"></div>
+            <div class="image"><img src="img_private-projekter/sort-top.jpg"></div>
+            <div class="image"><img src="img_private-projekter/patchworkbukser.jpg"></div>
+            <div class="image"><img src="img_private-projekter/grys-bukser.jpg"></div>
+
+            <div class="image"><img src="img_private-projekter/vaest.jpg"></div>
+            <div class="image"><img src="img_private-projekter/haeklede-dyr.jpg"></div>
+            <div class="image"><img src="img_private-projekter/haeklet-haette.jpg"></div>
+            <div class="image"><img src="img_private-projekter/haeklet-hval.jpg"></div>
+            <div class="image"><img src="img_private-projekter/cardigan.jpg"></div>
+
+            <div class="image"><img src="img_private-projekter/teaterkoncert-1.jpg"></div>
+            <div class="image"><img src="img_private-projekter/teaterkoncert-2.jpg"></div>
+            <div class="image"><img src="img_private-projekter/teaterkoncert-3.jpg"></div>
+
+            <div class="image"><img src="img_private-projekter/hjerteforeningen.jpg"></div>
+            <div class="image"><img src="img_private-projekter/bose.jpg"></div>
+            <div class="image"><img src="img_private-projekter/rygestop.jpg"></div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="img/img1.jpg" alt="">
+        </div>
+
+        <nav class="text-box">
+          <h1>Kreativitet</h1>
+          <p>Min kreativitet spænder over en masse forskellige interesser.<br>
+            Dette er et galleri, der viser nogle af de mange projekter, jeg har lavet i min fritid. Alt er selvlært!<br><br>
+            Her finder I:<br>
+            <ul>
+              <li>Malet tøj og sko.</li>
+              <li>Tøjdesign og tøj jeg selv har syet.</li>
+              <li>Hæklet tøj og tøjdyr.</li>
+              <li>Teaterkoncert med sang og eget kostume.</li>
+              <li>Kampagne- og annonceskitser.</li>
+            </ul><br>
+            Før musen hen over et billede, hvis det skal vises i farver.
+          </p>
+        </nav>
+
+  </div>
+
+  <section class="modal__container-krea">
+    <button class="modal__button-1" id="open-modal">
+        Find Mai
+    </button>
+
+    <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close">
+                <span>&times;</span>
+            </div>
+            
+            <h1 class="modal__title">DU FANDT MIG!</h1>
+            <br>
+            <img src="trophy.png" alt="" class="modal__img">
+
+           
+            <p class="modal__description">Godt gået!</p>
+            <p class="modal__description">Find mig også på sociale medier</p>
+
+            <a href="kontakt.html" class="modal__button-2 modal__button-width">KLIK HER</a>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    /*=============== SHOW MODAL ===============*/
+    const showModal = (openButton, modalContent) =>{
+        const openBtn = document.getElementById(openButton),
+        modalContainer = document.getElementById(modalContent)
+        
+        if(openBtn && modalContainer){
+            openBtn.addEventListener('click', ()=>{
+                modalContainer.classList.add('show-modal')
+            })
+        }
+    }
+    showModal('open-modal','modal-container')
+
+    /*=============== CLOSE MODAL ===============*/
+    const closeBtn = document.querySelectorAll('.close-modal')
+
+    function closeModal(){
+        const modalContainer = document.getElementById('modal-container')
+        modalContainer.classList.remove('show-modal')
+    }
+    closeBtn.forEach(c => c.addEventListener('click', closeModal))
+</script>
+
+  <script>
+    document.querySelectorAll('.image-container img').forEach(image =>{
+      image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+      }  
+    });
+
+    document.querySelector('.popup-image span').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
+    }
+
+    document.querySelector('.popup-image .text').onclick = () =>{
+      document.querySelector('.popup-image').style.display = 'none';
+    }
+  
+  </script>
+
+</body__private-projekter>
+</html>
